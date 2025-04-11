@@ -81,7 +81,7 @@
 <section>
     <div class="container">
   <div class="screen" id="introScreen">
-    <img src="{{ asset('img/logo-gofam.png') }}" alt="">
+    <img src="{{ asset('img/logo-gofam1.png') }}" alt="">
     <h3 class="mt-4">Storytelling about the purpose of the app through some sort of animation</h3>
     <button id="continueBtn" class="theme-btn mt-4">Continue</button>
     <div class="loaderbutton" id="loadingSpinner"></div>
@@ -96,6 +96,7 @@
         <button id="registerBtn" class="theme-btn mt-3"><span class="material-symbols-outlined">
             person_add
             </span>Register</button>
+
 
             
 
