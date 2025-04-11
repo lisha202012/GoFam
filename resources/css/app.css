@@ -10,3 +10,38 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+:root{
+    --main-font: "Outfit", sans-serif;
+    --sec-font: "Epilogue", sans-serif;
+    --main-color: #FE45FA;
+    --sec-color: #FFB8FD;
+    --sec-color-white: #D0D0D0;
+    --theme-gradient: linear-gradient(to right, rgba(152,42,245,1) 0%, rgba(226,37,127,1) 100%);
+    --theme-gradient-hover: linear-gradient(to left, rgba(152,42,245,1) 0%, rgba(226,37,127,1) 100%);
+    --theme-glow: 0px 10px 60px 4px rgba(254,69,250,0.35);
+    --trans-gradient: linear-gradient(to right, rgba(229,15,218,0) 0%, rgba(229,15,218,1) 50%, rgba(229,15,218,0) 100%);
+    --trans-gradient-alt: linear-gradient(to bottom, rgba(229,15,218,0) 0%, rgba(229,15,218,1) 50%, rgba(229,15,218,0) 100%);
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+
+@media (min-width: 1200px){
+
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+
+        max-width: 1000px !important;
+
+    }
+
+
+
+}

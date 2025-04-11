@@ -6,6 +6,9 @@
     <title>Opening Screen</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     @livewireStyles
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x/dist/cdn.min.js" defer></script>
     <style>
@@ -44,17 +47,26 @@
 </head>
 <body>
 
-    <div x-data="{ showHabit: false }">
-        <div class="container" x-show="!showHabit">
-            <h2>Opening Screen</h2>
-            <p>Storytelling about the purpose of the app through some sort of animation comes here</p>
-            <button class="btn" @click="showHabit = true">Continue →</button>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div x-data="{ showHabit: false }">
+                        <div class="container" x-show="!showHabit">
+                            <h2>Opening Screen</h2>
+                            <p>Storytelling about the purpose of the app through some sort of animation comes here</p>
+                            <button class="btn" @click="showHabit = true">Continue →</button>
+                        </div>
+                
+                        <div x-show="showHabit">
+                            <livewire:create-habit />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div x-show="showHabit">
-            <livewire:create-habit />
-        </div>
-    </div>
+    </section>
+    
 
     @livewireScripts
 </body>
